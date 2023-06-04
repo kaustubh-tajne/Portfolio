@@ -1,0 +1,147 @@
+:root {
+    --bg_sub : rgba(243, 194, 194, 0.849);
+    --br_sub : 5px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    /* height: 55vh; */
+
+}
+
+.main_wel {
+}
+
+.portfolio img {
+    border-radius: 0.3rem;
+}
+
+.dem {
+    /* border: 2px solid; */
+}
+
+.main_fonts {
+    /* font-family: 'Oswald', sans-serif; */
+    /* text-transform: capitalize; */
+    line-height: 1.4rem;
+    /* min-height: 60vh; */
+    /* display: flex; */
+    align-items: center;
+    /* border: 2px solid; */
+    margin-top: 1rem;
+}
+
+.main_fonts h1 {
+    text-transform: capitalize;
+}
+
+.main_fonts img {
+    height: 100%;
+}
+
+.main_fonts p {
+    color: rgb(77, 76, 76);
+}
+
+.heading {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.tech_box {
+    background-color: var(--bg_sub);
+    border-radius: var(--br_sub);
+    min-height: 8rem;
+    padding: 8px;
+    margin: 0.4rem 0.6rem;
+    width: 12rem;
+    /* min-width: 10rem; */
+}
+
+.span_col {
+    color: rgb(59, 58, 58);
+    /* border: 1px solid; */
+    display: inline-block;
+    max-width: 100%;
+}
+
+.tect_para {
+    /* border: 1px solid; */
+    max-width: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.achieve_box {
+    background-color: var(--bg_sub);
+    border-radius: var(--br_sub);
+    min-height: 8rem;
+    padding: 8px;
+    width: 10rem;
+    margin: 0.4rem 0.6rem;
+}
+
+.achieve_box p {
+    font-weight: 500;
+}
+
+.text-start {
+    color: rgb(46, 46, 46);
+}
+
+.lang_logo {
+    width: 3rem;
+}
+
+.lang_box {
+    /* background-color: var(--bg_sub); */
+    background-color: rgb(156 163 167 / 56%);
+    border-radius: var(--br_sub);
+    padding: 8px;
+    /* margin: 0.4rem 0.6rem; */
+    min-width: 10rem;
+    max-width: 15rem;
+    /* font-family: sans-serif; */
+}
+
+.edu_grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 1fr;
+    /* grid-gap: 0.2rem; */
+    border: 1px solid black;
+    overflow-x: auto;
+}
+
+.head_grid {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.edu_grid div {
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+.info_contact { 
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.my_name {
+    font-weight: 700;
+    color: black;
+}
+
+.gmail_head::after {
+
+}
+
+.gmail_head {
+    border-bottom: 1px solid;
+    color: green;
+}
+
+.key_course {
+    font-size: 1.08rem;
+    font-weight: 500;
+}

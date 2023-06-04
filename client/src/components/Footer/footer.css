@@ -1,0 +1,16 @@
+.link_sec a{
+    margin: 5px 10px;
+    font-size: larger;
+}
+
+.footer {
+    background-color: rgb(240, 240, 240);
+    bottom: 0;
+    width: 100%;
+}
+
+
+.text_footer span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}

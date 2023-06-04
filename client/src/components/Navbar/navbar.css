@@ -1,0 +1,52 @@
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgba(108, 40, 217, 0.822) !important;
+  font-style: italic;
+}
+
+.navBar-section {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.nav-item {
+  font-weight: 500;
+}
+
+.buttonOff {
+  background-color: rgba(108, 40, 217, 0.822) !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+}
+
+.nav-link {
+  font-size: 1.1rem !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.box-chat {
+  min-width: 20%;
+  max-width: 50%;
+  border: 2px solid rgb(160, 157, 157);
+  margin: 0.4rem;
+  padding: 0.4rem;
+  background-color: rgb(227, 227, 233);
+  border-radius: 0.2rem;
+}
+
+.box-chat p {
+  /* min-width: 20%;
+    max-width: 50%; */
+}
+
+@media (max-width: 768px) {
+  .box-chat {
+    max-width: 80%;
+  }
+}

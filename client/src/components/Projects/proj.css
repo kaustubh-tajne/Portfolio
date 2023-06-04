@@ -1,0 +1,68 @@
+:root {
+    --radius: 0.6rem;
+}
+
+.visit-btn {
+    background-color: rgba(108, 162, 248, 0.938) ;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+}
+
+.card {
+    /* box-shadow: 1px 1px 2px 1px #cacaca; */
+    /* border: 1px solid rgb(212, 212, 212); */
+    border-radius: var(--radius);
+}
+
+.card img {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.title_main {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    /* border-bottom: 2px solid rgb(99, 99, 13); */
+
+}
+
+.main_line {
+    width: 20%;
+    margin: 0.6rem auto;
+    border: 2px solid rgb(8, 190, 235);
+}
+
+.stack {
+    font-weight: 800;
+    font-size: 1.3rem;
+    /* border: 2px solid red; */
+    background-color: rgba(240, 217, 92, 0.959);
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.tags {
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    word-spacing: 15px;
+    margin-top: 0.3rem;
+}
+
+.tags_div {
+    border: 1px solid rgb(168, 168, 168);
+    /* text-align: justify; */
+    min-height: 4rem;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+}
+
+.description {
+    text-align: justify;
+    height: 10.5rem;
+    /* border: 2px solid; */
+}
