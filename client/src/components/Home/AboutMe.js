@@ -74,7 +74,7 @@ const AboutMe = () => {
 
               <div>B.E.</div>
               <div>YCCE, Nagpur</div>
-              <div>7.62 (Current)</div>
+              <div>7.64 (Current)</div>
               <div>2019 - Present</div>
 
               <div>HSC</div>
