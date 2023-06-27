@@ -72,18 +72,18 @@ const AboutMe = () => {
               <div className="head_grid">CGPA/Percentage</div>
               <div className="head_grid">Year</div>
 
-              <div>B.E.</div>
+              <div>B.E. (Computer Technology)</div>
               <div>YCCE, Nagpur</div>
               <div>7.74 (Current)</div>
               <div>2019 - Present</div>
 
               <div>HSC</div>
-              <div>Maharastra State Board</div>
-              <div>81.20%</div>
+              <div>Maharashtra State Board</div>
+              <div>81.23%</div>
               <div>2019</div>
 
               <div>SSC</div>
-              <div>Maharastra State Board</div>
+              <div>Maharashtra State Board</div>
               <div>90.20%</div>
               <div>2017</div>
             </div>
@@ -111,7 +111,7 @@ const AboutMe = () => {
             </div>
             <div className="info_contact">
               <span className="gmail_head">City</span>
-              <span> &nbsp;&nbsp; : Nagpur, Maharastra</span>
+              <span> &nbsp;&nbsp; : Nagpur, Maharashtra</span>
             </div>
             <div className="info_contact">
               <span className="gmail_head">Country</span>
