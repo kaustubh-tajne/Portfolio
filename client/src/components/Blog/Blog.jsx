@@ -5,13 +5,14 @@ import Sidebar from "./Sidebar";
 import { NavLink } from "react-router-dom";
 import ShowBlog from "./ShowBlog";
 import { useEffect } from "react";
+import BASE_URL from "../../url/BASE_URL";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
     try {
-      const res = await fetch("/api/posts/");
+      const res = await fetch(`${BASE_URL}/api/posts/`);
       const data = await res.json();
 
       // console.log(data);

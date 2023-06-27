@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import conactImg from "../../images/contactNew.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../App";
+import BASE_URL from "../../url/BASE_URL";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Login = () => {
     }
 
     try {
-      const res = await fetch("/login", {
+      const res = await fetch(`${BASE_URL}/login`, {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

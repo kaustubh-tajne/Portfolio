@@ -4,6 +4,7 @@ import Upload from "./Upload";
 import CardProj from "./CardProj";
 import Tabs from "./Tabs";
 import AddProjects from "./AddProjects";
+import BASE_URL from "../../url/BASE_URL";
 
 const Project = () => {
   const [projectArr, setProjectArr] = useState([]);
@@ -12,7 +13,7 @@ const Project = () => {
   
   const getProjects = async () => {
     try {
-      const res = await fetch("/project");
+      const res = await fetch(`${BASE_URL}/project`);
       const data = await res.json();
       setProjectArr(data);
       setItProjectArr(data);

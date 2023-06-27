@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import contact from "../../images/contact.png";
 import "./contact.css";
 import { useNavigate } from "react-router-dom";
+import BASE_URL from "../../url/BASE_URL";
 
 const Contact = () => {
   const [user, setUser] = useState({
@@ -15,7 +16,7 @@ const Contact = () => {
 
   const getContactData = async () => {
     try {
-      const res = await fetch("/contact", {
+      const res = await fetch(`${BASE_URL}/contact`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -38,6 +39,7 @@ const Contact = () => {
         setShow(false);
       }
     } catch (error) {
+      console.log(error);
       alert("Something wrong! Please try again!");
     }
   };
@@ -70,7 +72,7 @@ const Contact = () => {
     }
 
     try {
-      const res = await fetch("/contacts", {
+      const res = await fetch(`${BASE_URL}/contacts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

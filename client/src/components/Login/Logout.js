@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from "../../App";
+import BASE_URL from '../../url/BASE_URL';
 
 const Logout = () => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Logout = () => {
 
     const logoutPage = async () => {
         try {
-            const res = await fetch('/logout', {
+            const res = await fetch(`${BASE_URL}/logout`, {
                 method: "GET",
                 headers: {
                     'Content-Type' : 'application/json',

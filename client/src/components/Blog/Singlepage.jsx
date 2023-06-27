@@ -9,6 +9,7 @@ import { useState } from "react";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import hackerImg from '../../images/hacker.png';
+import BASE_URL from "../../url/BASE_URL";
 
 const Singlepage = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Singlepage = () => {
 
   const getSinglePost = async () => {
     try {
-      const res = await fetch(`/api/posts/${id}`);
+      const res = await fetch(`${BASE_URL}/api/posts/${id}`);
       const data = await res.json();
 
       // console.log(data);
@@ -66,7 +67,7 @@ const Singlepage = () => {
 
   const handleUpdate = async () => {
     try {
-      await fetch(`/api/posts/${_id}`, {
+      await fetch(`${BASE_URL}/api/posts/${_id}`, {
         method: "PUT",
         body: JSON.stringify({ title: titleU, desc: descU }),
         headers: {

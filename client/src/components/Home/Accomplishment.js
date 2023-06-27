@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { GrFormAdd } from "react-icons/gr";
+import BASE_URL from "../../url/BASE_URL";
 
 const arr_achi = [
   {
@@ -25,7 +26,7 @@ const Accomplishment = () => {
 
   const getData = async () => {
     try {
-      const res = await fetch("/api/box");
+      const res = await fetch(`${BASE_URL}/api/box`);
       const data = await res.json();
       console.log(data);
       setAchievements(data);

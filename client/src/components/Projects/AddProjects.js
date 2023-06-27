@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import BASE_URL from "../../url/BASE_URL";
 
 const AddProjects = ({showAdd}) => {
   const [fileInput, setFileInput] = useState("");
@@ -47,7 +48,7 @@ const AddProjects = ({showAdd}) => {
 
   const uploadImage = async (image) => {
     try {
-      await fetch("/api/upload", {
+      await fetch(`${BASE_URL}/api/upload`, {
         method: "POST",
         body: JSON.stringify({ data: image, user: user }),
         headers: {

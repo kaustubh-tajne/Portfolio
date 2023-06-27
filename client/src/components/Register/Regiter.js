@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import conactImg from "../../images/contactNew.png";
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from "../../url/BASE_URL";
 // style={{border: "2px solid red"}}
 
 const Regiter = () => {
@@ -31,7 +32,7 @@ const Regiter = () => {
       return alert("Password is not matching");
     }
 
-    const res = await fetch("/register", {
+    const res = await fetch(`${BASE_URL}/register`, {
       method: "POST",
       body: JSON.stringify({ name, email, password, cpassword, phone }),
       headers: {

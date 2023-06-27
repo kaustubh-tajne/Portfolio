@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import port from "../../images/portfolio.jpg";
+import BASE_URL from "../../url/BASE_URL";
 
 const ShowBlog = ({ post }) => {
   const { title, updatedAt, photo, desc, _id } = post;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import portfolio from "../../images/portfolio.jpg";
 import "./write.css";
 import { BiImageAdd } from "react-icons/bi";
+import BASE_URL from "../../url/BASE_URL";
 
 const Write = () => {
   const [fileInput, setFileInput] = useState("");
@@ -56,7 +57,7 @@ const Write = () => {
   const uploadImage = async (image) => {
     console.log(writeInfo);
     try {
-      await fetch("/api/posts/", {
+      await fetch(`${BASE_URL}/api/posts/`, {
         method: "POST",
         body: JSON.stringify({ data: image, writeInfo: writeInfo }),
         headers: {
