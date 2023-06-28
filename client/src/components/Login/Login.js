@@ -54,7 +54,7 @@ const Login = () => {
           localStorage.setItem("state","true");
         }
         alert("Login Successful");
-        navigate("/project");
+        navigate("/");
         window.location.reload();
       }
     } catch (error) {
