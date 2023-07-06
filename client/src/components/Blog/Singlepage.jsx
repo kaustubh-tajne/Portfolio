@@ -52,7 +52,7 @@ const Singlepage = () => {
       return;
     }
     try {
-      await fetch(`/api/posts/${_id}`, {
+      await fetch(`${BASE_URL}/api/posts/${_id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
